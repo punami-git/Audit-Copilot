@@ -273,7 +273,7 @@ st.markdown(
           <strong>How it works:</strong>
         </p>
         <p style="margin:0;">
-          This is a multi-agent AI system powered by a Large Language Model. The pipeline orchestrates two specialized agents: an SQL agent that translates your question into a database query, and a pattern detection agent that analyzes the results to surface recurring weaknesses and emerging risks.
+          This is a multi-agent AI system powered by a Large Language Model. The pipeline orchestrates two specialized AI agents: an SQL agent that translates your question into a database query, and a pattern detection agent that analyzes the results to surface recurring weaknesses and emerging risks.
         </p>
       </div>
     </div>
