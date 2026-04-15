@@ -93,6 +93,36 @@ def apply_styles() -> None:
             max-width: 980px;
         }
 
+        .hero-lead {
+            font-size: 1.08rem;
+            line-height: 1.55;
+            margin: 0 0 14px 0;
+        }
+
+        .hero-section-title {
+            font-size: 1.06rem;
+            line-height: 1.4;
+            margin: 0 0 8px 0;
+            font-weight: 800;
+        }
+
+        .hero-large-copy {
+            font-size: 1.02rem;
+            line-height: 1.55;
+            margin: 0 0 12px 0;
+        }
+
+        .hero-bullets {
+            margin: 0 0 14px 0;
+            padding-left: 20px;
+            font-size: 1.02rem;
+            line-height: 1.55;
+        }
+
+        .hero-bullets li {
+            margin-bottom: 8px;
+        }
+
         .summary-box {
             background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 48%, #0891b2 100%);
             color: white;
@@ -226,17 +256,20 @@ st.markdown(
       <div class="pill">Mistral + Tool Calling</div>
       <h1>Audit Intelligence Agent</h1>
       <div class="hero-copy">
-        <p style="margin:0 0 8px 0;">
-          <strong>How to use it:</strong>
+        <p class="hero-lead">
+          <strong>This tool analyzes control failures and past audit findings to identify recurring issues and flag weak controls.</strong>
         </p>
-        <p style="margin:0 0 12px 0;">
-          Ask a question using one of the sample prompts below. Each response is structured in four parts:
+        <p class="hero-section-title">
+          How to use it:
         </p>
-        <p style="margin:0 0 12px 0;">
-          High level summary followed by each finding explained in depth<br>
-          Evidence Records and Tables which showcase the underlying data supporting each finding
+        <p class="hero-large-copy">
+          Ask a question using one of the sample prompts below. Each response includes:
         </p>
-        <p style="margin:0 0 16px 0;">
+        <ul class="hero-bullets">
+          <li><strong>Findings</strong> - a high level summary followed by each finding explained in depth</li>
+          <li><strong>Evidence</strong> - the records and tables that support each finding</li>
+        </ul>
+        <p class="hero-large-copy" style="margin-bottom:16px;">
           You can also explore the mock datasets to get a feel for the underlying data.
         </p>
         <p style="margin:0 0 8px 0;">
