@@ -251,7 +251,6 @@ risky_df = load_table("risky_transactions")
 st.markdown(
     """
     <div class="hero">
-      <div class="pill">Multi-Agent AI System</div>
       <h1>Audit Copilot</h1>
       <div class="hero-copy">
         <p class="hero-lead">
