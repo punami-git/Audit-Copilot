@@ -252,18 +252,17 @@ with table_tabs[1]:
 with table_tabs[2]:
     st.dataframe(risky_df, width="stretch", height=220)
 
-st.subheader("Ask a Question in Natural Language")
+st.subheader("Ask a question.")
 example_questions = [
     "Analyze these control failures and tell me what recurring problems you see.",
-    "Looking across finding summaries and remediation notes, what broader patterns stand out?",
     "What recurring access review or access removal problems appear in the data?",
 ]
-st.write("Try one of these sample questions")
+st.write("Try one of the below sample questions.")
 for example in example_questions:
     st.code(example)
 
 question = st.text_area(
-    "Ask about recurring patterns",
+    "Ask Audit Copilot",
     height=110,
     placeholder="e.g., analyze these open failures and tell me what recurring hidden problems you see",
 )
@@ -297,14 +296,14 @@ if run_pattern:
                 st.markdown("### Question Specific SQL Query")
                 st.code(result.primary_sql or "No SQL generated.", language="sql")
 
-                st.markdown("### Question-Specific Result Table")
+                st.markdown("### Evidence Records")
                 primary_df = pd.DataFrame(result.primary_rows)
                 if primary_df.empty:
                     st.info("The SQL query ran but returned no rows.")
                 else:
                     st.dataframe(primary_df, width="stretch", height=280)
 
-                st.markdown("### Supporting Evidence Tables")
+                st.markdown("### Evidence Tables")
                 evidence_tabs = st.tabs(
                     [
                         "Failures by Team",
