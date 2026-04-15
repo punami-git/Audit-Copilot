@@ -222,18 +222,29 @@ st.markdown(
     """
     <div class="hero">
       <div class="pill">Multi-Agent AI System</div>
-      <h1>Audit Copilot</h1>
+      <div class="pill">LangGraph + LangChain</div>
+      <div class="pill">Mistral + Tool Calling</div>
+      <h1>Audit Intelligence Agent</h1>
       <div class="hero-copy">
-        <p style="margin:0 0 16px 0;">
-          This tool analyzes control failures and past audit findings to identify recurring issues and flag weak controls.
+        <p style="margin:0 0 8px 0;">
+          <strong>How to use it:</strong>
+        </p>
+        <p style="margin:0 0 12px 0;">
+          Ask a question using one of the sample prompts below. Each response is structured in four parts:
+        </p>
+        <p style="margin:0 0 12px 0;">
+          High level summary followed by each finding explained in depth<br>
+          Evidence Records and Tables which showcase the underlying data supporting each finding
         </p>
         <p style="margin:0 0 16px 0;">
-          It is a multi-agent AI system built with LangGraph and LangChain, powered by a Large Language Model (Mistral). The pipeline orchestrates two specialized agents:
+          You can also explore the mock datasets to get a feel for the underlying data.
         </p>
-        <ul class="hero-list">
-          <li><strong>SQL Agent</strong> - translates natural language queries into SQL using tool calling, executes them against a live database, and returns structured results</li>
-          <li><strong>Pattern Detection Agent</strong> - analyzes query outputs to identify recurring patterns control failures, weaknesses, and emerging risk patterns across audit findings. It summarizes and reports them.</li>
-        </ul>
+        <p style="margin:0 0 8px 0;">
+          <strong>How it works:</strong>
+        </p>
+        <p style="margin:0;">
+          This is a multi-agent AI system powered by a Large Language Model. The pipeline orchestrates two specialized agents: an SQL agent that translates your question into a database query, and a pattern detection agent that analyzes the results to surface recurring weaknesses and emerging risks.
+        </p>
       </div>
     </div>
     """,
