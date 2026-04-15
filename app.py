@@ -252,9 +252,7 @@ st.markdown(
     """
     <div class="hero">
       <div class="pill">Multi-Agent AI System</div>
-      <div class="pill">LangGraph + LangChain</div>
-      <div class="pill">Mistral + Tool Calling</div>
-      <h1>Audit Intelligence Agent</h1>
+      <h1>Audit Copilot</h1>
       <div class="hero-copy">
         <p class="hero-lead">
           <strong>This tool analyzes control failures and past audit findings to identify recurring issues and flag weak controls.</strong>
@@ -267,7 +265,7 @@ st.markdown(
         </p>
         <ul class="hero-bullets">
           <li><strong>Findings</strong> - a high level summary followed by each finding explained in depth</li>
-          <li><strong>Evidence</strong> - the records and tables that support each finding</li>
+          <li><strong>Evidence</strong> - the tables and records that support each finding</li>
         </ul>
         <p class="hero-large-copy" style="margin-bottom:16px;">
           You can also explore the mock datasets to get a feel for the underlying data.
