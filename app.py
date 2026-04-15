@@ -291,7 +291,7 @@ with table_tabs[1]:
 with table_tabs[2]:
     st.dataframe(risky_df, width="stretch", height=220)
 
-st.subheader("Ask a question.")
+st.subheader("Ask a question")
 example_questions = [
     "Analyze these control failures and tell me what recurring problems you see.",
     "What recurring access review or access removal problems appear in the data?",
