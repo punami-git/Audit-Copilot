@@ -332,9 +332,6 @@ if run_pattern:
                 st.markdown("### Findings")
                 render_pattern_cards(result.patterns)
 
-                st.markdown("### Question Specific SQL Query")
-                st.code(result.primary_sql or "No SQL generated.", language="sql")
-
                 st.markdown("### Evidence Records")
                 primary_df = pd.DataFrame(result.primary_rows)
                 if primary_df.empty:
@@ -364,6 +361,8 @@ if run_pattern:
                             width="stretch",
                             height=260,
                         )
+                #st.markdown("### SQL Query to Generate Evidence Records")
+                #st.code(result.primary_sql or "No SQL generated.", language="sql")
 
                 if result.candidate_focus_area:
                     st.markdown("### Candidate Focus Area")
