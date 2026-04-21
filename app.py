@@ -369,6 +369,6 @@ if run_pattern:
                 st.markdown("### SQL Query to Generate Evidence Records")
                 st.code(result.primary_sql or "No SQL generated.", language="sql")
 
-                if result.candidate_focus_area:
-                    st.markdown("### Candidate Focus Area")
-                    st.info(result.candidate_focus_area)
+                #if result.candidate_focus_area:
+                    #st.markdown("### Candidate Focus Area")
+                    #st.info(result.candidate_focus_area)
