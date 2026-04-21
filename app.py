@@ -273,7 +273,12 @@ st.markdown(
           <strong>How it works:</strong>
         </p>
         <p style="margin:0;">
-          This is a multi-agent AI system powered by a Large Language Model. The pipeline orchestrates two specialized AI agents: an SQL agent that translates your question into a database query, and a pattern detection agent that analyzes the results to surface recurring weaknesses and emerging risks.
+          This is a multi-agent AI system built with LangGraph and tool calling. It orchestrates two specialized AI agents: 
+          <ul class="hero-bullets">
+          <li><strong>SQL Agent</strong> - translates your question into an SQL query, executes it against a live database, and returns structured results</li>
+          <li><strong>Pattern Detection Agent</strong> - analyzes the results to identify recurring control failures, and emerging risk patterns. It summarizes and reports them.</li>
+        </ul>
+        <p class="hero-large-copy" style="margin-bottom:16px;">
         </p>
       </div>
     </div>
@@ -361,8 +366,8 @@ if run_pattern:
                             width="stretch",
                             height=260,
                         )
-                #st.markdown("### SQL Query to Generate Evidence Records")
-                #st.code(result.primary_sql or "No SQL generated.", language="sql")
+                st.markdown("### SQL Query to Generate Evidence Records")
+                st.code(result.primary_sql or "No SQL generated.", language="sql")
 
                 if result.candidate_focus_area:
                     st.markdown("### Candidate Focus Area")
